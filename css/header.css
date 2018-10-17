@@ -1,0 +1,55 @@
+  .header{
+    background: #fff;
+  }
+  .logo img{
+    width: 80%;
+  }
+  .advertise{
+    position: absolute;
+    left: 20px;
+    top: 96px;
+    z-index: 10;
+    background: #e6e6e6;
+    height: 370px;
+    width: 230px;
+    text-align: center;
+  }
+  .advertise h1{
+    font-size: 24px;
+    text-align: center;
+  }
+  .advertise h2{
+    font-size: 18px;
+    text-align: center;
+  }
+  .advertise h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+  }
+  .advertise div a{
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+    padding:8px 30px;
+    margin-top: 20px;
+  }
+  .nav-wrap{
+    margin: 0 auto ;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 1400px;
+    position: relative;
+    height: 96px;
+  }
+  .nav{
+    margin-top: 20px;
+  }
+  .nav a{
+    color: #333;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .banner{
+    height: 370px;
+  }

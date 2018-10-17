@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>时代在线</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/jq22.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+<script src='./js/jqss.js'></script>
+<body>
+  <div>
+    <div class="header">
+      <div class="nav-wrap row">
+        <div class="logo col-xs-3"><img src="./img/logo.png" alt=""></div>
+        <div class="nav col-xs-7">
+          <a href="">首页</a>
+          <a href="">视频</a>
+          <a href="">在线题库</a>
+          <a href="">考试资讯</a>
+          <a href="">关于时代</a>
+        </div>
+        <div class="login col-xs-2">
+          <span>会员登录</span>
+          <img src="./img/avatar.png" alt="">
+        </div>
+        <!-- 广告区 -->
+        <div class="advertise">
+          <h1>2018年</h1>
+          <h2>初中级通信工程师</p>
+          <h3>考试视频专区</p>
+          <div class='btn-wrap'>
+            <a href="" class="btn btn-default">视频学习</a>
+          </div>
+          <div class='btn-wrap'>
+            <a href="" class="btn btn-default">课程题库</a>
+          </div>
+          <div class='btn-wrap'>
+            <a href="" class="btn btn-default">考试资讯</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- banner轮播 -->
+      <div class="swiper-container banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/banner.png" alt=""></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- 最新通知 -->
+      <div class="box">
+        <div class="t_news">
+          <b>最新资讯</b>
+          <ul class="news_li">
+            <li><a href="#" >2018年下半年软考准备考试资料下载</a></li>
+            <li><a href="#" >2017年下半年软考准备考试资料下载</a></li>
+            <li><a href="#" >2019年下半年软考准备考试资料下载</a></li>
+          </ul>
+          <ul class="swap"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h1 class="main-title">
+          认证培训
+        </h1>
+        <div class="index-category">
+          <a href="">市场营销</a>
+          <a href="">CIPS</a>
+          <a href="">SEMI</a>
+          <a href="">六西格玛</a>
+          <a href="">NPDP</a>
+          <a href="">PMP</a>
+          <a href="">ACP</a>
+          <a href="">PGMP</a>
+        </div>
+        <div class='row'>
+          <div class="left col-xs-7">
+            <div class="tab">
+              <span class='active'>视频课程</span>
+              <span>模拟考试</span>
+            </div>
+            <!-- 课程轮播 -->
+            <div class="swiper-container course">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="thumbnail">
+                    <img src="./img/course01.png" alt="...">
+                    <div class="caption">
+                      <p>信息安全工程师考试培训真人视频教程（2018版）</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="thumbnail">
+                    <img src="./img/course02.png" alt="...">
+                    <div class="caption">
+                      <p>信息安全工程师考试培训真人视频教程（2018版）</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 如果需要分页器 -->
+              <div class="swiper-pagination"></div>
+
+            </div>
+          </div>
+          <div class="col-xs-1"></div>
+          <div class="right col-xs-4">
+            <div class="time">
+              <div class="sub-title">
+                <h3>考试时间</h3>
+                <p>距离2018年PMP考试</p>
+                <p class="count-down">还有20天</p>
+              </div>
+            </div>
+            <div class="information">
+              <div class="sub-title">
+                <h3>资讯动态<span class='more'>更多></span></h3>
+                <ul>
+                  <li><a href="">2018下半年软考报名时间</a></li>
+                  <li><a href="">2018下半年软考报名时间</a></li>
+                  <li><a href="">2018下半年软考报名时间</a></li>
+                  <li><a href="">2018下半年软考报名时间</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    
+  </div>
+  <script>        
+  var mySwiperBanner = new Swiper ('.banner', {
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  }) 
+  var mySwiperCourse = new Swiper ('.course', {
+    loop: true, // 循环模式选项
+    slidesPerView: 2,
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })        
+  </script>
+</body>
+<style>
+  @import url('./css/base.css');
+  @import url('./css/header.css');
+  .content{
+    width: 1400px;
+    margin:0 auto;
+  }
+  .content .section{
+    background: #fff;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .thumbnail{
+    margin: 10px;
+  }
+  .course{
+    padding-bottom: 20px;
+  }
+  .swiper-pagination{
+    bottom: 0px !important;
+  }
+
+</style>
+</html>
