@@ -13,8 +13,8 @@ ul {
   line-height: 66px;
   color:#fff;
   font-size: 20px;
-  margin: 25px;
-  width: 120px;
+  margin: 18px;
+  width: 110px;
   height: 66px;
   text-decoration: none;
   position: relative;
@@ -89,4 +89,18 @@ ul {
 .tab span.active{
   background-color: #5bb952;
   color: #fff;
+}
+
+
+/* video播放器 */
+.m {
+  width: 90%;
+  height: 300px;
+	/* height: 400px; */
+	margin-left: auto;
+	margin-right: auto;
+}
+.m .video-js{
+  width: 100% !important;
+  height: 100% !important;
 }

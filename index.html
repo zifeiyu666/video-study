@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="./css/jq22.css">
+<link rel="stylesheet" href="./css/video-js.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
@@ -65,7 +66,10 @@
         </div>
       </div>
     </div>
+
+    <!-- 主体内容 -->
     <div class="content">
+      <!-- 认证培训 -->
       <div class="section">
         <h1 class="main-title">
           认证培训
@@ -83,8 +87,8 @@
         <div class='row'>
           <div class="left col-xs-7">
             <div class="tab">
-              <span class='active'>视频课程</span>
-              <span>模拟考试</span>
+              <span class='active tab-item'>视频课程</span>
+              <span class='tab-item'>模拟考试</span>
             </div>
             <!-- 课程轮播 -->
             <div class="swiper-container course">
@@ -128,17 +132,65 @@
                   <li><span>2</span><a href="">2018下半年软考报名时间</a></li>
                   <li><span>3</span><a href="">2018下半年软考报名时间</a></li>
                   <li><span>4</span><a href="">2018下半年软考报名时间</a></li>
+                  <li><span>5</span><a href="">2018下半年软考报名时间</a></li>
+                  <li><span>6</span><a href="">2018下半年软考报名时间</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        
-        
+      </div>
+
+      <!-- 推荐视频 -->
+      <div class="section">
+        <h1 class="main-title">
+          推荐视频
+        </h1>
+        <div class="row" style='margin-top: 40px;'>
+          <div class="col-xs-6">
+            <div class="video-wrap">
+                <div class="m">
+                  <video id="my-video" class="video-js" controls preload="auto" width="960" height="400"
+                  poster="./img/course01.png" data-setup="{}">
+                    <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                    <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                    <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+                    <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+                  </video>
+                  
+                </div>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <ul class='video-item'>
+              <li class='active'>
+                <p>2018年下半年二级人力资源管理师培训课程</p>
+                <p>2018-09-16</p>
+              </li>
+              <li>
+                <p>2018年下半年二级人力资源管理师培训课程</p>
+                <p>2018-09-16</p>
+              </li>
+              <li>
+                <p>2018年下半年二级人力资源管理师培训课程</p>
+                <p>2018-09-16</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     
   </div>
+  <script src="./js/video.min.js"></script> 
+  <script src="http://vjs.zencdn.net/5.19/lang/zh-CN.js"></script>
+  <script type="text/javascript">
+    var myPlayer = videojs('my-video');
+    videojs("my-video").ready(function(){
+      var myPlayer = this;
+      myPlayer.play();
+    });
+  </script> 
   <script>        
   var mySwiperBanner = new Swiper ('.banner', {
     loop: false, // 循环模式选项
@@ -179,12 +231,19 @@
     },
   })        
   </script>
+  <script>
+    $('.tab-item').click(function() {
+      $(this).parent().children().removeClass('active')
+      $(this).addClass('active')
+      
+    })
+  </script>
 </body>
 <style>
   @import url('./css/base.css');
   @import url('./css/header.css');
   .content{
-    width: 1400px;
+    width: 1200px;
     margin:0 auto;
   }
   .content .section{
@@ -192,6 +251,7 @@
     padding-top: 1px;
     padding-bottom: 20px;
     margin-bottom: 30px;
+    margin-top: 40px;
   }
   
   .thumbnail{
@@ -229,12 +289,40 @@
   .time .tip{
     font-size: 18px;
     color: #333;
+    margin-left: 20px;
   }
   .time .count-down{
     background-color: #5bb952;
-    padding: 30px;
+    padding: 20px;
     color: #fff;
+    margin: 0 20px;
+    border-radius: 10px;
+    font-size: 26px;
+    text-align: center;
   }
-
+  .time .count-down span{
+    font-size: 36px;
+    margin: 0 15px;
+    background: yellow;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  .video-item{
+    background: #eee;
+    margin-right: 30px;
+    padding: 20px;
+  }
+  .video-item li{
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+  .video-item li:hover{
+    background: #fff;
+  }
+  .video-item li.active{
+    background: #fff;
+  }
 </style>
 </html>
