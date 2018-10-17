@@ -1,7 +1,10 @@
 body{
   background: #eee;
 }
-
+/*reset*/
+ul {
+  padding: 0;
+}
 
 /*主页的分类*/
 .index-category a{
@@ -54,6 +57,22 @@ body{
   line-height: 30px;
   margin: 10px 0px;
 }
+
+/*主标题样式*/
+.sub-title{
+  font-size: 16px;
+  border-left: 2px solid #5bb952;
+  padding-left: 10px;
+  line-height: 26px;
+  margin: 10px 0px;
+}
+.more {
+  float: right;
+  font-size: 12px;
+  color: #999;
+}
+
+
 
 /*tab标签样式*/
 .tab{
