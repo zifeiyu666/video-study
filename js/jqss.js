@@ -1,5 +1,5 @@
 // JavaScript Document
-function b(){ 
+function b(){
   t = parseInt(x.css('top'));
   y.css('top','19px');  
   x.animate({top: t - 19 + 'px'},'slow'); //19为每个li的高度
