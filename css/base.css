@@ -12,6 +12,15 @@ body{
   margin-bottom: 30px;
   margin-top: 40px;
 }
+.thumbnail{
+  cursor: pointer;
+  position: relative;
+  border: none;
+}
+.thumbnail:hover{
+  top: -4px;
+  box-shadow: 1px 1px 4px #ccc;
+}
 
 /*子页面banner*/
 .sub-banner{
@@ -39,12 +48,12 @@ body{
 /*子页面内容区*/
 .sub-content{
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 80px auto;
 }
 
 /*面包屑导航*/
 .bread-crumb{
-
+  margin-top: 30px;
 }
 .bread-crumb a{
   font-size: 14px;
@@ -56,6 +65,62 @@ body{
   font-size: 14px;
   color:#ebac3e;
 }
+
+/*子页面小分类*/
+.sub-small-category{
+  margin-top: 30px;
+  height: 40px;
+  background-color: #f6f6f6!important;
+  border:2px solid #fff;
+  padding: 5px 20px;
+}
+.sub-small-category span{
+  font-size: 14px;
+  border-right: 1px solid #999;
+  padding: 0 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.sub-small-category span:last-of-type{
+  border: none;
+}
+.sub-small-category span.active{
+  color: #ebac3e;
+}
+.sub-small-category span:hover{
+  color: #ebac3e;
+  font-size:16px;
+}
+
+/*子页面分类*/
+.sub-category{
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px 40px;
+}
+.sub-category span{
+  width:110px;
+  margin-right: 13px;
+  margin-left: 13px;
+  height: 50px;
+  display: inline-block;
+  line-height: 50px;
+  color: #666;
+  font-size:16px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.sub-category span.active{
+  background-color: #ebac3e;
+  color: #fff;
+}
+.sub-category span:hover{
+  background-color: #ebac3e;
+  color: #fff;
+}
+
 /*工具*/
 .hidden{
   display: none;
@@ -116,6 +181,14 @@ ul {
   line-height: 30px;
   margin: 10px 0px;
 }
+/*子页面主标题*/
+.sub-main-title{
+  font-size: 18px;
+  border-left: 3px solid #ff8d28;
+  padding-left: 10px;
+  line-height: 30px;
+  margin: 10px 0px;
+}
 
 /*主标题样式*/
 .sub-title{
@@ -164,6 +237,27 @@ ul {
 .m .video-js{
   width: 100% !important;
   height: 100% !important;
+}
+
+/*横向tab*/
+.h-tab{
+  border-bottom: 1px solid #eee;
+}
+.h-tab span{
+  display: inline-block;
+  font-size: 16px;
+  padding: 0 10px;
+  line-height: 40px;
+  margin:0 20px;
+  position: relative;
+  cursor: pointer;
+}
+.h-tab span.active{
+  border-bottom: 2px solid #ff8d28;
+}
+.h-tab span:hover{
+  border-bottom: 2px solid #ff8d28;
+  top: -4px;
 }
 
 /*footer*/
