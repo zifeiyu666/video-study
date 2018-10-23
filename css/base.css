@@ -21,10 +21,31 @@ body{
   top: -4px;
   box-shadow: 1px 1px 4px #ccc;
 }
+.pagination .active a{
+  background-color: #fa9e5a;
+  border-color: #fa9e5a;
+}
+.pagination .active a:hover{
+  background-color: #fa9e5a;
+  border-color: #fa9e5a;
+}
+.pagination .active a:focus{
+  background-color: #fa9e5a;
+  border-color: #fa9e5a;
+}
+.pagination li a{
+  color: #fa9e5a;
+}
+.pagination li a:hover{
+  color: #fa9e5a;
+}
+.pagination li a:focus{
+  color: #fa9e5a;
+}
 
 /*子页面banner*/
 .sub-banner{
-  height: 400px;
+  height: 300px;
   overflow: hidden;
   background: url('../img/banner.png') no-repeat;
 }
@@ -33,7 +54,7 @@ body{
   margin: 0 auto;
 }
 .banner-title{
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: 40px;
 }
 .banner-title h3{
